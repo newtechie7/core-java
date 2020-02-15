@@ -8,3 +8,6 @@ first java program:
 	->few shortcuts
 ->each word code explanation
 ->git hub url to download the code
+
+
+->youtube link: https://www.youtube.com/watch?v=XTEMzqduw7s
