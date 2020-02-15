@@ -1,0 +1,10 @@
+core java knowledge transfer session agenda:
+
+first java program:
+->by using notepad
+	->compile and run from command line
+->by using eclipse ide
+	->run as java application
+	->few shortcuts
+->each word code explanation
+->git hub url to download the code

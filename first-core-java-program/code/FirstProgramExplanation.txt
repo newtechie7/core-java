@@ -1,0 +1,83 @@
+package com.myowncompany.myapp.text.print;
+
+public class PrintTextApplication {
+	
+	public static void main(String[] strings) {
+		
+		System.out.println("This is my first java program");
+		
+	}
+	
+}
+
+============================================================
+package:
+->it is a keyword in java
+->it is used to define a package to a class or interface or enum or annotation
+->it is like a folder/directory where want to create the class, so that we can refer to that class by using <pacakge_name>.<class_name>
+->why we need package:
+	->code separation. we can separate code based on modules, sub modules and the task the code performs by using packages
+	->it is used to resolve naming collisions between classes or interfaces or enums or annotations
+	->what is naming collision:
+		->having same name to two different classes or interfaces or enums or annotations
+		->how it is a problem
+			->it is a big problem when we want to give same name to two different classes or interfaces or enums or annotations with in the same application or in the different application where we use other application as part of our application as a jar or library
+			example 1: java has already predefined classes, if we want to give same name System as like above, we cannot create class System if we don't have concept of package
+			example 2: in a same project multiple people works which is common thing, if there is no concept of package then every member of the team always ask others whether to keep 
+			the class which he is thinking to keep. he has to do that because in same folder we can not create two files. so there should be a way where we will be free to create a class with the required name with out having naming collision problem even with same name.
+			->if we use package in above scenarios then we can resolve this issues as packages will have uniqueness as we have to follow naming conventions
+			->what is package naming convention
+				-><domain_company_name>.<project_name>.<module_name>.<submodule_name>.<task_name>
+				ex: com.icici.icmobile.accounts.withdrawal.calculate
+				class_name: CalculateBill
+				
+
+class:
+->it is a keyword in java
+->it is used to create a user defined class in java
+->it contains member methods, member variables, inner classes, blocks and constructors
+->it contains the data as part of variables
+->it contains variable initializations as part of constructors
+->it contains logic as part of methods or blocks
+
+PrintTextApplication:
+->it is a identifier/name to a class and name can be anything based on java naming conventions
+->it is user defined class/data type in my application
+
+public:
+->it is a keyword in java
+->it acts as a access specifier or modifier in java
+->it is used to specify accessibility to the classes or interfaces or methods or constructors or variables
+->public members(variable/methods/etc) can be accessible any where in the application based on the method type
+->if method type is static then by using class name we can directly use public members
+->if method type is non-static then by creating object to the class and by using object reference we can use public members
+
+static:
+->it is a keyword in java
+->it acts as a access modifier in java
+->it is used to create static methods or variables or classes or blocks
+->memory to static variables will be allocated and initialized at class loading time by JVM
+->we can access static members with class name directly with out creating object to the class
+->in above example out(System.out.println) is the static member of System class so we called System.out (directly with class name)
+->main is the static method so when do, java <class_name_which_has_main_method> ex: java PrintTextApplication
+  then JVM use that class to call main method like PrintTextApplication.main() by passing String array as input	
+	
+main:
+->it is a method
+->it takes string array as input
+->when we call it, it performs the operation based on the logic inside the method
+->every java program execution begins from main method
+
+System:
+->it is a predefined class in java
+->it is from java.lang package which is default package in java which is why we no need to import the classes from java.lang package
+->it has out, in, err and some other variables and methods
+
+out:
+->it is a static variable in System class which is of type java.io.PrintStream class 
+->it is by default connect to current system or computers OS input/output
+->if we use System.out, then it will perform operation on System input/output
+
+println:
+->it is method in PrintStream class
+->it is used to perform write operation on the connected input/output
