@@ -1,0 +1,6 @@
+core java knowledge transfer session agenda:
+
+passing command line arguments to main method
+->using windows command prompt
+->using eclipse ide
+->git hub url to download the code
